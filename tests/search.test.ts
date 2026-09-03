@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { buildNormalized, filterEntries, highlight, normalize, escapeHtml } from "../src/search.ts";
-import type { Entry } from "../src/types.ts";
+import { buildNormalized, filterEntries, highlight, normalize, escapeHtml } from "../src/search";
+import type { Entry } from "../src/types";
 
 const SAMPLE: Entry[] = [
   ["aba", "perintah;", 0],

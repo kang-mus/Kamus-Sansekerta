@@ -11,7 +11,7 @@
  *
  * Catatan: proses penuh ~41k kata bisa 5 jam, jadi jalan background. Untuk demo/MVP bisa pakai --limit.
  */
-import type { Entry } from "../src/types.ts";
+import type { Entry } from "../src/types";
 
 const BASE = "https://kbji.kemendikdasmen.go.id";
 const ABJAD = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");

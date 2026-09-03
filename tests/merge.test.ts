@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import type { Entry } from "../src/types.ts";
+import type { Entry } from "../src/types";
 
 function mergeEntries(wikt: Entry[], kbji: Entry[]): Entry[] {
   const map = new Map<string, Entry>();

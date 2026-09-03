@@ -4,7 +4,7 @@
  * - Parse *[[kata]]: arti;  dan ** sub-lema
  * - Output: data/kamus.wiktionary.json (Entry[]) + data/kamus.json (merged awal) + data/meta.json
  */
-import type { Entry } from "../src/types.ts";
+import type { Entry } from "../src/types";
 
 const WIKTIONARY_API =
   "https://id.wiktionary.org/w/api.php?action=parse&page=Lampiran:Kamus_bahasa_Sanskerta_%E2%80%93_bahasa_Indonesia&prop=wikitext&format=json&origin=*";

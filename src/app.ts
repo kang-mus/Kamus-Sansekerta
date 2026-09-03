@@ -1,5 +1,5 @@
-import type { Entry } from "./types.ts";
-import { buildNormalized, filterEntries, highlight, type NormalizedEntry } from "./search.ts";
+import type { Entry } from "./types";
+import { buildNormalized, filterEntries, highlight, type NormalizedEntry } from "./search";
 
 const ABJAD = ["Semua", "A", "B", "C", "D", "Dh", "E", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "W", "Y"] as const;
 

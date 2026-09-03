@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseWikitext } from "../scripts/scrape-wiktionary.ts";
+import { parseWikitext } from "../scripts/scrape-wiktionary";
 
 describe("parseWikitext", () => {
   it("parses single entry", () => {

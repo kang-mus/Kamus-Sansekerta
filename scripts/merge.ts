@@ -2,7 +2,7 @@
  * Merge data/kamus.wiktionary.json + data/kamus.kbji.json -> data/kamus.json
  * Deduplicate case-insensitive, KBJI prioritas (lebih lengkap)
  */
-import type { Entry } from "../src/types.ts";
+import type { Entry } from "../src/types";
 
 const WIKT = "data/kamus.wiktionary.json";
 const KBJI = "data/kamus.kbji.json";
