@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Sansekerta — Kamus Sanskerta–Indonesia</title>
+    <meta name="description" content="Kamus Sanskerta–Indonesia statis. Cari 13.000+ kata Sanskerta/Jawa dan artinya secara instan." />
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Kata Sansekerta</h1>
+        <p class="tagline">Kamus Sanskerta — Indonesia · 13.000+ lema · Live search</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="search-wrap" aria-label="Pencarian">
+        <input
+          id="search"
+          type="search"
+          placeholder="Cari kata (mis. aba, babad, dharma) atau arti (mis. perintah, merah)…"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Cari kata atau arti"
+        />
+        <div class="search-meta">
+          <span id="count">Memuat…</span>
+          <span id="source-badge" class="source-badge" hidden></span>
+        </div>
+      </section>
+
+      <nav id="abjad" class="abjad" aria-label="Filter abjad"></nav>
+
+      <section aria-label="Hasil">
+        <ul id="results" class="results" aria-live="polite"></ul>
+        <p id="empty" class="empty" hidden>Tidak ada hasil.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Sumber: <a href="https://id.wiktionary.org/wiki/Lampiran:Kamus_bahasa_Sanskerta_%E2%80%93_bahasa_Indonesia" target="_blank" rel="noopener">Wiktionary ID</a> (CC BY-SA 4.0)
+          &middot; <span id="meta"></span>
+          &middot; <a href="https://kbji.kemendikdasmen.go.id" target="_blank" rel="noopener">KBJI</a> (siap merge)
+        </p>
+        <p class="small">Statis · Dibuat dengan Bun + TypeScript + Vite · Data snapshot di <code>data/kamus.json</code></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>
